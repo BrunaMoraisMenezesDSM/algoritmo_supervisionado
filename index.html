@@ -3,13 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Algoritmo supervisionado</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+        h1 {
+            margin-top: 0;
+        }
+        .input-group {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .input-group > * {
+            margin: 0 5px;
+        }
+    </style>
 </head>
 <body>
-    <div>
-        <input type="text" id="entrada" placeholder="Entre com sua tag">
-        <button type="button" onclick="dados()">Compara</button>
+    <h1>Algoritmo supervisionado</h1>
+    <div class="input-group">
+        <label for="palavraBusca">Palavra-chave:</label>
+        <input type="text" id="palavraBusca">
+        <button onclick="calcularIndiceRelevancia()">Calcular</button>
     </div>
+
+    <div id="resultado"></div>
+
     <script src="app.js"></script>
 </body>
 </html>
